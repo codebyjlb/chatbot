@@ -1,9 +1,9 @@
 const MessengerBot = require('messenger-bot');
 
 const bot = new MessengerBot({
-  token: 'YOUR_PAGE_ACCESS_TOKEN',
-  verify: 'YOUR_APP_SECRET',
-  app_secret: 'YOUR_APP_SECRET'
+  token: 'process.env.PAGE_ACCESS_TOKEN',
+  verify: 'process.env.APP_SECRET',
+  app_secret: 'Yprocess.env.APP_SECRET'
 });
 
 bot.on('message', (userId, message) => {
